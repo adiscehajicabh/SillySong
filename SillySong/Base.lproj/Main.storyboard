@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SillySong" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silly Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ne-SG-2pU">
+                                <rect key="frame" x="16" y="43" width="343" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="4pZ-lk-izk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1PR-hs-PIV">
+                                <rect key="frame" x="16" y="208" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Egi-3p-QGe"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="F2Q-RM-9Gn"/>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="E3R-hi-dJY"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cod-wp-udD">
+                                <rect key="frame" x="16" y="272" width="343" height="375"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="375" id="BUK-q9-uEg"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73608749489379077" green="0.24463688470179731" blue="0.10266799428104573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1PR-hs-PIV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4Ne-SG-2pU" secondAttribute="bottom" constant="20" id="Dcc-Lh-g9k"/>
+                            <constraint firstAttribute="trailing" secondItem="1PR-hs-PIV" secondAttribute="trailing" constant="16" id="DpJ-Pf-T0Z"/>
+                            <constraint firstItem="Cod-wp-udD" firstAttribute="leading" secondItem="1PR-hs-PIV" secondAttribute="leading" id="EIn-te-kIf"/>
+                            <constraint firstItem="4Ne-SG-2pU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Ivn-5j-C3z"/>
+                            <constraint firstItem="Cod-wp-udD" firstAttribute="top" secondItem="1PR-hs-PIV" secondAttribute="bottom" constant="34" id="V2U-89-XMz"/>
+                            <constraint firstAttribute="trailing" secondItem="4Ne-SG-2pU" secondAttribute="trailing" constant="16" id="Wah-Df-5A3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cod-wp-udD" secondAttribute="bottom" constant="20" id="a5e-1k-DFI"/>
+                            <constraint firstItem="1PR-hs-PIV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="fb1-VH-npF"/>
+                            <constraint firstItem="1PR-hs-PIV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jS9-xo-aON"/>
+                            <constraint firstItem="Cod-wp-udD" firstAttribute="trailing" secondItem="1PR-hs-PIV" secondAttribute="trailing" id="mn7-TY-cWR"/>
+                            <constraint firstItem="4Ne-SG-2pU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="pDB-3F-LVo"/>
+                            <constraint firstItem="4Ne-SG-2pU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ymF-Az-Q6s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lyricsView" destination="Cod-wp-udD" id="AzY-mp-1or"/>
+                        <outlet property="nameField" destination="1PR-hs-PIV" id="ezQ-HA-wnc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
